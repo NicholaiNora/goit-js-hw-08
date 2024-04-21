@@ -17,8 +17,7 @@ function createData() {
 form.addEventListener(
   'input',
   _.throttle(() => {
-    createData();
-    localStorage.setItem('feedback-form-state', JSON.stringify(formData));
+    localStorage.setItem('feedback-form-state', JSON.stringify(createData()));
   }, 500)
 );
 
