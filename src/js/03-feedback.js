@@ -8,10 +8,11 @@ function createData() {
   const emailValue = form.elements.email.value;
   const messageValue = form.elements.message.value;
 
-  return (formData = {
+  const formData = {
     email: emailValue,
     message: messageValue,
-  });
+  };
+  return formData
 }
 form.addEventListener(
   'input',
