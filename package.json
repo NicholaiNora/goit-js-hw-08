@@ -1,7 +1,7 @@
 {
-  "name": "parcel-project-template",
+  "name": "goit-js-hw-08",
   "version": "2.0.0",
-  "description": "Цей проект створено за допомогою Parcel. Для ознайомлення та налаштування \r додаткових можливостей, [зверніться до документації](https://parceljs.org/).",
+  "description": "This project was created with the help of Parcel. To understand and adjust additional capabilities, [go back to documentation](https://parceljs.org/).",
   "homepage": "https://nicholainora.github.io/goit-js-hw-08/",
   "scripts": {
     "start": "parcel src/*.html",
@@ -29,6 +29,5 @@
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
-  },
-  "browserslist": "> 0.5%, last 2 versions, not dead"
+  }
 }
