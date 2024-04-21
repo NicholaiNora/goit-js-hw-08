@@ -1,4 +1,4 @@
-var _ = require('lodash');
+let throttle = require('lodash.throttle');
 
 const form = document.querySelector('.feedback-form');
 const emailInput = document.querySelector('label [name="email"]');
@@ -12,11 +12,11 @@ function createData() {
     email: emailValue,
     message: messageValue,
   };
-  return formData
+  return formData;
 }
 form.addEventListener(
   'input',
-  _.throttle(() => {
+  throttle(() => {
     localStorage.setItem('feedback-form-state', JSON.stringify(createData()));
   }, 500)
 );
